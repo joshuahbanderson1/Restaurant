@@ -328,36 +328,6 @@
     </div>
   </div>
   <!-- Footer Section End -->
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>
-    new WOW().init();
-
-    // Video Modal Script
-    document.addEventListener('DOMContentLoaded', function () {
-      var videoSrc;
-      var videoBtn = document.querySelector('.btn-play');
-      var videoModal = document.getElementById('videoModal');
-      var iframe = document.getElementById('video');
-
-      if (videoBtn) {
-        videoBtn.addEventListener('click', function () {
-          videoSrc = this.getAttribute('data-src');
-        });
-      }
-
-      if (videoModal) {
-        videoModal.addEventListener('shown.bs.modal', function () {
-          iframe.setAttribute('src', videoSrc + '?autoplay=1&modestbranding=1&showinfo=0');
-        });
-        videoModal.addEventListener('hide.bs.modal', function () {
-          iframe.setAttribute('src', '');
-        });
-      }
-    });
-  </script>
 </body>
 
 </html>
